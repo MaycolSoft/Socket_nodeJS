@@ -9,7 +9,7 @@
   "scripts": {
     "start": "babel-node index.js --presets es2015",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "babel-node index.js --presets es2015",
+    "build": "",
     "nodemon": "nodemon  index.js"
   },
   "author": "",
