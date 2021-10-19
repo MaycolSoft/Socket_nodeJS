@@ -1,0 +1,35 @@
+{
+  "name": "mm-api",
+  "version": "1.0.0",
+  "description": "",
+  "engines": {
+    "node": ">=14.0.1"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "babel-node index.js --presets es2015",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rimraf dist/ && babel ./ --out-dir dist/ --ignore ./node_modules,./.babelrc,./package.json,./npm-debug.log --copy-files",
+    "nodemon": "nodemon  index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "express": "^4.16.2",
+    "express-fileupload": "^1.1.7-alpha.3",
+    "express-kun": "^1.0.24",
+    "express-laravel-router": "^1.4.1",
+    "express-validator": "^6.6.1",
+    "jwt-simple": "^0.5.1",
+    "request": "^2.81.0",
+    "socket.io": "^2.3.0",
+    "socket.io-client": "^4.2.0",
+    "socketio-jwt": "^4.6.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "nodemon": "^2.0.12"
+  }
+}
