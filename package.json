@@ -9,7 +9,7 @@
   "scripts": {
     "start": "babel-node index.js --presets es2015",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rimraf dist/ && babel ./ --out-dir dist/ --ignore ./node_modules,./.babelrc,./package.json,./npm-debug.log --copy-files",
+    "build": "babel-node index.js --presets es2015",
     "nodemon": "nodemon  index.js"
   },
   "author": "",
